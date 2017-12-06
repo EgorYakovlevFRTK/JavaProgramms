@@ -52,6 +52,7 @@ public class Main {
  			System.out.println(field.getName());
  			System.out.println(field.getType().getName());
  			System.out.println(Modifier.toString(field.getModifiers()));
+ 			System.out.println();
  		}
 	}
 }
