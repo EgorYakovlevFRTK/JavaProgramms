@@ -1,0 +1,13 @@
+package checkFaulls;
+
+public class myClass {
+
+	public static void main(String[] args) {
+		Shape [] arr = {new Shape(), new Tringle(), new Circle(), new Square()};
+		for (Shape i: arr) {
+			i.draw();
+			i.say();
+		}
+	}
+
+}

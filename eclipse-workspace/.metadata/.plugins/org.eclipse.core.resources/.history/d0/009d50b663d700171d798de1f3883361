@@ -1,0 +1,17 @@
+package checkFaulls;
+
+public class myClass {
+	
+	public static void nothingMaker(Shape obj) {
+		obj.draw();
+	}
+	
+	public static void main(String[] args) {
+		
+		Shape s = (Shape) new Tringle(); //s типа Shape
+		nothingMaker(s);
+		s.Egor();
+		
+	}
+
+}

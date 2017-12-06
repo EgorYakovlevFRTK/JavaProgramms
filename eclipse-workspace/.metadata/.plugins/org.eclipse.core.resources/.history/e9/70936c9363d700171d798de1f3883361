@@ -1,0 +1,19 @@
+package checkFaulls;
+
+public  class Shape {
+	
+	public static void Egor() {
+		System.out.println("Pomidorka");
+	}
+	
+	static int i = 66;
+	
+	public void draw() {
+		System.out.println("Shape");
+	}
+	
+	public void say() {
+		System.out.println("GavGav");
+	}
+
+}

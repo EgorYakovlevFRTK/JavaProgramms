@@ -1,0 +1,12 @@
+package checkFaulls;
+
+public class Shape {
+	
+	public void draw() {
+		System.out.println("Shape");
+	}
+	
+	public void say() {
+		System.out.println("GavGav");
+	}
+}

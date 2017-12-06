@@ -1,0 +1,15 @@
+package checkFaulls;
+
+public class myClass {
+
+	public static void main(String[] args) {
+		Shape [] arr = {new Shape(), new Tringle(), new Circle(), new Square()};
+		Shape s1 = new Tringle();
+		Shape s2 = new Tringle();
+		Tring
+		
+		s1.draw();
+		s2.draw();
+	}
+
+}

@@ -1,0 +1,18 @@
+package swingGuiProg;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JScrollPane;
+
+public class Main {
+	
+	public static void main (String args []) {
+		//awt & swing
+		
+		Window wind = new Window ();
+		wind.setVisible(true);
+		JScrollPane scrPane = new JScrollPane();
+		wind.setLayout(null);
+		wind.add(scrPane);
+	}
+}

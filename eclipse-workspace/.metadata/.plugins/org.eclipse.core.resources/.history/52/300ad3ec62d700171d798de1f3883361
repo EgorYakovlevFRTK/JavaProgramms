@@ -1,0 +1,23 @@
+package swingGuiProg;
+
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class Main {
+	
+	public static void main (String args []) {
+		//awt & swing
+		
+		Window wind = new Window ();
+		wind.setVisible(true);
+		JScrollPane scrPane = new JScrollPane();
+		scrPane.setBounds(100, 100, 100, 100);
+		wind.setLayout(null);
+		wind.add(scrPane);
+		wind.setSize(400, 400);
+		JTextArea text = new JTextArea();
+		String t = "EgorPomidor\"EgorPomidor\"EgorPomidor\"EgorPomidor\"EgorPomidor\"EgorPomidor\"EgorPomidor\"EgorPomidor";
+		text.append(t);
+		scrPane.setViewportView(text);
+	}
+}

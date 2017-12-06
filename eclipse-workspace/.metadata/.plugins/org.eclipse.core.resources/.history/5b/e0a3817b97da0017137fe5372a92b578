@@ -1,0 +1,45 @@
+package reflectionApp;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Parameter;
+
+public class Main {
+	
+	public static void main(String args[]) {
+		EgorPomidor ep = new EgorPomidor ("Egor");
+		Class cls = ep.getClass();
+		Class cls2 = EgorPomidor.class;
+		try {
+			EgorPomidor ep2 = (EgorPomidor) cls.newInstance();
+		} catch (InstantiationException | IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		Constructor[] constructors = cls.getDeclaredConstructors();
+		for (Constructor constructor: constructors) {
+			System.out.println(constructor.getName());
+			Parameter[] params = constructor.getParameters();
+			for (Parameter param: params) {
+				System.out.println(param.getType());
+			}
+		}
+	}
+}
+
+class EgorPomidor {
+	String s;
+	
+	public EgorPomidor() {
+		
+	}
+	
+	public EgorPomidor(String s) {
+		this.s = s;
+	}
+	
+	public String EgorMethod(String s) {
+		System.out.println("You enter:" + s);
+		return s;
+	}
+}

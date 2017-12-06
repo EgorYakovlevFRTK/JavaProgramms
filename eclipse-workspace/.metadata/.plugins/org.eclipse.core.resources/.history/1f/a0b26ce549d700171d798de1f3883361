@@ -1,0 +1,23 @@
+package checkFaulls;
+
+public class Point {
+
+	public class Tringle {
+		private void draw() {
+			System.out.println("Tringle");
+		}
+	}
+	
+	public class Square {
+		private void draw() {
+			System.out.println("Square");
+		}
+	}
+	
+	public class Circle {
+		private void draw() {
+			System.out.println("Circle");
+		}
+	}
+	
+}

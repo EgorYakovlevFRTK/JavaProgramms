@@ -1,0 +1,62 @@
+package reflectionApp;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
+
+public class Main {
+	
+	public static void main(String args[]) {
+		EgorPomidor ep = new EgorPomidor ("Egor", 1);
+		Class cls = ep.getClass();
+		Class cls2 = EgorPomidor.class;
+		try {
+			EgorPomidor ep2 = (EgorPomidor) cls.newInstance();
+		} catch (InstantiationException | IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println(cls.getName());
+		Constructor[] constructors = cls.getDeclaredConstructors();
+		for (Constructor constructor: constructors) {
+			System.out.println("Constructor: " + constructor.getName());
+			Parameter[] params = constructor.getParameters();
+			for (Parameter param: params) {
+				System.out.println("Parameter (name): " + param.getName());
+				System.out.println("Parameter (type): " + param.getType().getName());
+			}
+		}
+		
+		System.out.println("");
+		System.out.println("Methods:");
+		Method [] meths = cls.getDeclaredMethods();
+		for (Method meth: meths) {
+			System.out.println(meth.getName());
+			Parameter[] params = meth.getParameters();
+			System.out.println("");
+			System.out.println("Method's parameters");
+			for (Parameter param: params) {
+				System.out.println(param.getName());
+				System.out.println(param.getType().getName());
+			}
+		}
+	}
+}
+
+class EgorPomidor {
+	String s;
+	
+	public EgorPomidor(String s, int t) {
+		this.s = s;
+	}
+	
+	public EgorPomidor() {
+		
+	}
+	
+	public String EgorMethod(String s) {
+		System.out.println("You enter:" + s);
+		return s;
+	}
+}

@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	private static ArrayList<Profile> profiles = new ArrayList<Profile>();
+	
+	public static void main(String[] args) {
+		Profile profile = new Profile();
+		profile.setName(JOptionPane.showInputDialog(null, "Enter your name"));
+		profile.setName(JOptionPane.showInputDialog(null, "Enter your surname"));
+		profiles.add(profile);
+		
+		for (Profile p : profiles) {
+			System.out.println(p.getName() + " " + p.getSurname());
+		}
+		
+	}
+
+}

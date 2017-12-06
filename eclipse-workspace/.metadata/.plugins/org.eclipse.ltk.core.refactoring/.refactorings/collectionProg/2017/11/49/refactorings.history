@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;networkAn.mobiles&apos; to &apos;mobile&apos;&#x0D;&#x0A;- Original project: &apos;collectionProg&apos;&#x0D;&#x0A;- Original element: &apos;networkAn.mobiles&apos;&#x0D;&#x0A;- Renamed element: &apos;networkAn.mobile&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;mobiles&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;networkAn{mobiles.java[mobiles" matchStrategy="1" name="mobile" qualified="false" references="true" similarDeclarations="false" stamp="1512060502835" textual="false" version="1.0"/>
+</session>

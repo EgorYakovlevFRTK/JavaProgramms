@@ -1,0 +1,11 @@
+package swingGuiProg;
+
+import javax.swing.JFrame;
+
+public class Window extends JFrame { //Наследуем JFrame: расширяем класс
+	
+	public Window () {
+		setVisible(true);
+		setSize(400, 400);
+	}
+}

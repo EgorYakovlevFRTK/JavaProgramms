@@ -1,0 +1,12 @@
+package checkFaulls;
+
+public class myClass {
+	
+	public static void main(String[] args) {
+		
+		Shape s = new Tringle();
+		
+		System.out.println(s instanceof Shape);
+	}
+
+}
